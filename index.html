@@ -12,14 +12,14 @@
         <div class="container">
             <nav>
                 <img src="images/Sakarya-Universitesi-Logo-Vector.svg-.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Anasayfa</a></li>
                     <li><a href="#">Hakkımda</a></li>
                     <li><a href="#">Memleketim</a></li>
                     <li><a href="#">İletişim</a></li>
-                    <i class="fa-regular fa-circle-xmark"></i>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Semih Alıcı</p>
@@ -48,6 +48,40 @@
             </div>
         </div>
     </div>
+<!--------HOBİLERİM-------->
+    <div id="hobi">
+        <div class="container">
+            <h1 class="sub-title">HOBİLERİM</h1>
+            <div class="fenerbahçe-list">
+                <div class="fenerbahçe">
+                    <img src="images/hacivelioglu-konagi-mustafa.jpg">
+                    <div class="laye">
+                        <h3>Atatürk evi</h3>
+                        <p>buraya atatürk evi hakkında bilgi deneme deneme 123 123 123  123 123 123 123</p>      
+                    </div>
+                </div><div class="fenerbahçe">
+                    <img src="images/afyonkarahisaraslantas5410x3784px254-dpi--icerik.jpg">
+                    <div class="laye">
+                        <h3>Frig Vadisi</h3>
+                        <p>Frig vadisi ile ilgili bilgi AZİZ YILDIRIM BAŞKAN FENERBAHÇE ŞAMPİYON</p>
+                    </div>
+                </div><div class="fenerbahçe">
+                    <img src="images/4981f3a1-city-51658-172ca508f3f.jpg">
+                    <div class="laye">
+                        <h3>Afyon kalesi</h3>
+                        <p>Afyon kalesi ile ilgili bilgi</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
     <!-------Memleketim-------->
     <div id="memleketim">
         <div class="container">
@@ -105,6 +139,29 @@
         </div>
         
     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");               
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right= "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
     
 
 

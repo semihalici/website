@@ -91,6 +91,31 @@
         font-weight: 600;
         color: #fff;
     }
+   #hobi{
+    padding: 50px 0; 
+   }
+.fenerbahçe-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top:50px;
+
+}
+.fenerbahçe{
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+}
+.fenerbahçe img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+
+
+
    /* ----memleketim-------*/
    #memleketim{
     padding: 50px 0;
@@ -176,6 +201,9 @@
     display: none;
    }
    @media only screen and(max-with: 600px) {
+    #header{
+        background-image :url() ;
+    }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -196,11 +224,29 @@
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
 
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .fa-regular{
+        position: absolute;
+        top:25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top:25px;
+        left: 25px;
+        cursor: pointer;
     }
    }
    
